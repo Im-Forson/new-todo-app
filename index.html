@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./style.css">
+
+  <script src="./app.js" defer></script>
+
+</head>
+<body onload="initialize()" class="body-bg body-bg-light">
+
+  <!--<img class="img-desktop-light"  alt="desktop-light" >-->
+  <div class="background bg-img-light"></div>
+
+  <div class="main-container">
+    <div class="logo-toggle">
+      <div id="todo-txt">todo</div>
+      <div class="theme light-mode" onclick="themeFunction()"></div>
+    </div>
+
+    <div class="input-bar input-light">
+      <div class="input-check-icon input-check-light"><img id="input-check" src="./images/icon-check.svg" alt=""></div>
+      <input id="input-value" type="text" class="input input-light" placeholder="Create a new todo...">
+    </div>
+
+    <div class="list-control-container">
+      <ul class="sortable-list light-scroll ">
+        <!--<li class="item item-light checked" draggable="true">
+          <div class="check-con check-con-bg check-light"><div class="check-icon-con check-icon"></div></div>
+          <p class="todo-text">Complete online javaScript course</p>
+          <div class="icon-cross-con"><div class="icon-cross"></div></div>
+        </li>
+
+        <li class="item item-light uncheck" draggable="true">
+          <div class="check-con check-con-bg check-light">
+            <div class="check-icon-con check-icon"></div>
+          </div>
+          <p class="todo-text">Jog around the park 3x</p>
+          <div class="icon-cross-con"><div class="icon-cross"></div></div>
+        </li>
+
+        <li class="item item-light uncheck" draggable="true">
+          <div class="check-con check-con-bg check-light">
+            <div class="check-icon-con check-icon"></div>
+          </div>
+          <p class="todo-text">10 minutes meditation</p>
+          <div class="icon-cross-con"><div class="icon-cross"></div></div>
+        </li>
+
+        <li class="item item-light uncheck" draggable="true">
+          <div class="check-con check-con-bg check-light">
+            <div class="check-icon-con check-icon"></div>
+          </div>
+          <p class="todo-text">Read for 1 hour</p>
+          <div class="icon-cross-con"><div class="icon-cross"></div></div>
+        </li>
+
+        <li class="item item-light uncheck" draggable="true">
+          <div class="check-con check-con-bg check-light">
+            <div class="check-icon-con check-icon"></div>
+          </div>
+          <p class="todo-text">Pick up groceries</p>
+          <div class="icon-cross-con"><div class="icon-cross"></div></div>
+        </li>
+
+        <li class="item item-light uncheck" draggable="true">
+          <div class="check-con check-con-bg check-light">
+            <div class="check-icon-con check-icon"></div>
+          </div>
+          <p class="todo-text">Complete Todo App on Frontend Mentor</p>
+          <div class="icon-cross-con"><div class="icon-cross"></div></div>
+        </li> -->
+
+      </ul>
+  
+      <div class="controls control-light">
+        <div class="count-div"><span id="count-left"></span> items left</div>
+        
+        <div class="desktop-group">
+          <button class="all tab tab-light active-tab">all</button>
+          <button class="active tab tab-light">active</button>
+          <button class="completed tab tab-light">completed</button>
+        </div>
+
+        <button class="clear-completed tab tab-light">clear completed</button>
+      </div>
+
+      <div class="mobile-group group-light">
+        <button class="all-mobile mobile-tab tab-light active-tab">all</button>
+        <button class="active-mobile mobile-tab tab-light">active</button>
+        <button class="completed-mobile mobile-tab tab-light">completed</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="drag-drop-txt  drag-drop-light"> Drag and drop to reorder list</div>
+
+  <!-- Add dynamic number --> 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/isaac-m-forson-629023252">Im Forson</a>.
+  </div>
+</body>
+</html>
