@@ -32,8 +32,42 @@ body {
 }
 
 .bg-img-dark {
+    width: 100%;@import url('https://fonts.google.com/specimen/Josefin+Sans');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    padding: 0;
+    margin: 0;
+    Font-size: 16px;
+    font-weight: 400;
+    font-family: Josefin Sans, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.body-bg-light {
+    background-color: hsl(236, 33%, 92%);
+}
+
+.body-bg-dark {
+    background-color: hsl(235, 21%, 11%);
+}
+
+.bg-img-light {
     width: 100%;
-    height: 250px;
+    height: 270px;
+    background-image: url("./images/bg-desktop-light.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img-dark {
+    width: 100%;
+    height: 270px;
     background-image: url("./images/bg-desktop-dark.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -371,7 +405,7 @@ li:hover .icon-cross-con {
         width: 520px;
     }
 
-    .background {height: 250px;}
+    .background {height: 270px;}
 
     .list-control-container {
         margin-top: 20px;
@@ -426,7 +460,7 @@ li:hover .icon-cross-con {
     }
 
     .background {
-        height: 220px;
+        height: 240px;
     }
 
     .list-control-container {
@@ -478,7 +512,7 @@ li:hover .icon-cross-con {
 
     .bg-img-light {
         width: 100%;
-        height: 220px;
+        height: 240px;
         background-image: url("./images/bg-mobile-light.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -486,7 +520,7 @@ li:hover .icon-cross-con {
     
     .bg-img-dark {
         width: 100%;
-        height: 220px;
+        height: 240px;
         background-image: url("./images/bg-mobile-dark.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -521,7 +555,7 @@ li:hover .icon-cross-con {
 
     .bg-img-light {
         width: 100%;
-        height: 220px;
+        height: 240px;
         background-image: url("./images/bg-mobile-light.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -529,7 +563,7 @@ li:hover .icon-cross-con {
     
     .bg-img-dark {
         width: 100%;
-        height: 220px;
+        height: 240px;
         background-image: url("./images/bg-mobile-dark.jpg");
         background-repeat: no-repeat;
         background-size: cover;
